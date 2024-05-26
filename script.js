@@ -1,6 +1,5 @@
 const wordContainer = document.getElementById("wordContainer");
 const startButton = document.getElementById("startButton");
-const explainButton = document.getElementById("explainButton");
 const usedLetterElement = document.getElementById("usedLetters");
 
 let canvas = document.getElementById("canvas");
@@ -107,9 +106,9 @@ const startGame = () => {
     wordContainer.innerHTML = "";
     usedLetterElement.innerHTML = "";
     startButton.style.display = "none";
-    drawHangman();
     selectRandomWord();
     drawWord();
+    drawHangman();
     document.addEventListener("keydown", letterEvent);
 };
 
