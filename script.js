@@ -1,6 +1,21 @@
 const wordContainer = document.getElementById("wordContainer");
 const startButton = document.getElementById("startButton");
 const usedLetterElement = document.getElementById("usedLetters");
+const keyboard = document.querySelector(".keyboard");
+const wordDisplay= document.querySelector(".word-display");
+
+for(let i=97; i<=122;i++){
+    const button=document.createElement("button");
+    button.classList.add("btn");
+    button.innerText=String.fromCharCode(i)
+    keyboard.appendChild(button);
+}
+
+
+
+
+
+
 
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
