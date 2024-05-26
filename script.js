@@ -4,6 +4,7 @@ const usedLetterElement = document.getElementById("usedLetters");
 const keyboard = document.querySelector(".keyboard");
 const wordDisplay= document.querySelector(".word-display");
 
+// Creacion del teclado digital
 for(let i=97; i<=122;i++){
     const button=document.createElement("button");
     button.classList.add("btn");
@@ -22,7 +23,7 @@ let ctx = canvas.getContext("2d");
 ctx.canvas.width = 120;
 ctx.canvas.height = 160;
 
-const words = ["javascript", "ahorcado", "programacion", "desarrollador", "codigo"];
+const words = ["javascript", "ahorcado", "programacion", "desarrollador", "codigo",  "guitarra","oxígeno","fútbol","historia","pizza", "jazz", "cámara","diamante", "ciencia", "bicicleta","puesta de sol","café","bailar","galaxia","volcán","novela","ballet","astronauta","astronauta","cascada","arco iris","universo","piano","vacaciones","teatro","desierto","girasol","fantasía"];
 let selectedWord;
 let usedLetters;
 let mistakes;
