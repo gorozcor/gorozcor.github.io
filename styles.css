@@ -1,8 +1,8 @@
 .hidden {
     color: transparent;
 }
-
-body {
+/* se usa un estilo pixel para la estatica del juego */
+body { 
     background-color: #e8a9a9;
     color: #fff;
     font-family: 'SF Pixelate', sans-serif;
@@ -13,20 +13,20 @@ body {
     height: 100vh;
     margin: 0;
 }
-
+/* Atributos esteticos del la palabra a descubrir */
 #wordContainer {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+/* Vista del las letras incognitas */
 .letter {
     margin: 0 7px;
     position: relative;
     text-align: center;
 }
-
+/* Vista de las letras despues de descubrilas */
 .letter::after {
     content: ' ';
     display: block;
@@ -37,7 +37,7 @@ body {
     background-color: #fff;
     min-width: 12px;
 }
-
+/* Estilos del boton Start-reset */
 #startButton, #resetButton {
     margin-top: 20px;
     appearance: none;
