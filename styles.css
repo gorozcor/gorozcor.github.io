@@ -52,11 +52,11 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-
+/* Estilos del boton Reset */
 #resetButton {
     background: #5d99d3;
 }
-
+/* Estilos del fondo del ahorcado */
 #canvas {
     border: 1px solid #000;
     margin-top: 20px;
@@ -64,7 +64,7 @@ body {
     max-width: 250px; 
     height: auto; 
 }
-
+/* Estilos al mostrar las letras */
 .used-letters {
     margin-top: 20px;
     font-size: 1.2rem;
@@ -79,7 +79,7 @@ body {
     gap: 5px;
     max-width: 300px; /* Limita el ancho máximo del teclado */
 }
-
+/* Estilos de as teclas del keyboard */
 .key {
     background-color: #d95d39;
     color: #fff;
@@ -93,7 +93,7 @@ body {
     width: 40px;
     height: 40px;
 }
-
+/* Estilos de los puntos mostrados */
 #scoreContainer {
     margin-top: 20px;
     font-size: 1.2rem;
