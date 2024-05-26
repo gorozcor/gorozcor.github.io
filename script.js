@@ -19,7 +19,7 @@ const bodyParts = [
     [5, 5, 1, 1],
     [3, 3, 1, 1],
     [5, 3, 1, 1]
-];
+];//creacion del cuerpo del ahorcado
 
 let selectedWord;
 let usedLetters;
@@ -42,7 +42,7 @@ const wrongLetter = () => {
     addBodyPart(bodyParts[mistakes]);
     mistakes++;
     if (mistakes === bodyParts.length) endGame();
-};
+};//agrega una pieza al ahorcado al equivocarse
 
 const endGame = () => {
     document.removeEventListener('keydown', letterEvent);
@@ -56,7 +56,7 @@ const correctLetter = letter => {
         if (children[i].innerHTML === letter) {
             children[i].classList.toggle('hidden');
             hits++;
-        }
+        }//Agrega la letra correcta a al formato de palabra incognita
     }
     if (hits === selectedWord.length) {
         score++;
@@ -98,10 +98,10 @@ const drawWord = () => {
         letterElement.classList.add('letter');
         letterElement.classList.add('hidden');
         wordContainer.appendChild(letterElement);
-    });
+    });//creacion de palabra al marcala
 };
 
-const selectRandomWord = () => {
+const selectRandomWord = () => {//seleccion de palabra random
     let word = words[Math.floor((Math.random() * words.length))].toUpperCase();
     selectedWord = word.split('');
 };
@@ -118,7 +118,7 @@ const drawHangMan = () => {
     ctx.fillRect(4, 1, 1, 1);
 };
 
-const generateKeyboard = () => {
+const generateKeyboard = () => {//creacion del teclado
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÑ'.split('');
     keyboard.innerHTML = '';
     letters.forEach(letter => {
@@ -152,6 +152,6 @@ const startGame = () => {
     generateKeyboard();
     document.addEventListener('keydown', letterEvent);
     keyboard.addEventListener('click', handleVirtualKeyboard);
-};
+};//comienzco del juego llevando todo los valores 
 resetButton.addEventListener('click', resetGame); 
 startButton.addEventListener('click', startGame);
