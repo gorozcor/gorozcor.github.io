@@ -137,6 +137,8 @@ const resetGame = () => {
     scoreElement.innerText = score;
     startGame();
 };
+
+
 const startGame = () => {
     usedLetters = [];
     mistakes = 0;
@@ -150,7 +152,6 @@ const startGame = () => {
     generateKeyboard();
     document.addEventListener('keydown', letterEvent);
     keyboard.addEventListener('click', handleVirtualKeyboard);
-    resetButton.addEventListener('click', resetGame); 
 };
-
+resetButton.addEventListener('click', resetGame); 
 startButton.addEventListener('click', startGame);

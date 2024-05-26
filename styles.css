@@ -60,9 +60,9 @@ body {
 #canvas {
     border: 1px solid #000;
     margin-top: 20px;
-    width: 100%; /* Haz que el canvas ocupe todo el ancho disponible */
-    max-width: 250px; /* Limita el ancho máximo del canvas */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
 }
 
 .used-letters {
@@ -99,7 +99,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* Responsive Styles */
+/* Responsive */
 @media (max-width: 768px) {
     #startButton, #resetButton {
         width: 250px;
