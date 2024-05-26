@@ -2,30 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Ahorcado</title>
+    <link href="https://fonts.cdnfonts.com/css/orchidea-pro" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="palabras.js" defer></script>
     <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
-    <div class="main">
-        <div class="marco">
-            <div class="game">
-                <div class="left">
-                    <h1 style="color: white;">El Ahorcado</h1>
-                    <canvas id="canvas"></canvas>
-                </div>
-                <div class="right">
-                    <ul id="wordContainer" class="word-display"></ul>
-                    <p>Incorrecto:
-                        <span id="mistakesCount" class="Oportunidades" style="color: crimson;">0/6</span>
-                    </p>
-                    <div id="usedLetters" class="used-letters"></div>
-                </div>
-            </div>
-        </div>
+    <h1>El Ahorcado</h1>
+    <div class="game-container">
+        <canvas id="canvas"></canvas>
+        <div id="usedLetters"></div>
+        <div id="wordContainer"></div>
     </div>
-    <button id="startButton" class="btn">Comenzar</button>
+    <div id="keyboard"></div>
+    <div id="scoreContainer">Puntuación: <span id="score">0</span></div>
+    <button id="startButton">INICIAR</button>
+    <button id="resetButton">REINICIAR</button>
 </body>
 </html>
